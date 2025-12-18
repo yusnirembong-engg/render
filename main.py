@@ -8,8 +8,9 @@ import uvicorn
 import os
 
 # ====== KONFIGURASI ======
-api_id = 34391297
-api_hash = "ee091f33f693c0964efcb19e34fd5703"
+
+api_id = int(os.getenv("API_ID"))
+api_hash = os.getenv("API_HASH")
 session_name = "/tmp/session_tele_user"  # Render hanya bisa write ke /tmp
 
 GROUP_IDS = [
